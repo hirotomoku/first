@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="table">
+  <thead>
+    <tr>
+      <th>メンバーID</th>
+      <th>姓</th>
+      <th>名</th>
+      <th>権限</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="member : ${memberList}">
+      <th th:text="${member.member_id}">(member_id)</th>
+      <th th:text="${member.second_name}">(second_name)</th>
+      <th th:text="${member.first_name}">(first_name)</th>
+      <th th:text="${member.authority}">(authority)</th>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

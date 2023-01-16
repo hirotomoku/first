@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Groupware | top_page</title>
+</head>
+<body>
+    <form action="#" th:action="@{/serch}" th:method="post">
+        <div class="mt-3">
+            <label for="memberidInput" class="form-label">メンバーID</label>
+            <input type="text" id="memberidInput" class="form-label" name="memberid">
+        </div>
+        <div class="mt-3">
+            <label for="passwordInput" class="form-label">パスワード</label>
+            <input type="password" id="passwordInput" class="form-label" name="password">
+        </div>
+        <div class="mt-3">
+            <button type="submit" class="btn btn-primary">login</button>
+        </div>
+    </form>
+</body>
+</html>
